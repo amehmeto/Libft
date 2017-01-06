@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 18:32:27 by amehmeto          #+#    #+#             */
-/*   Updated: 2016/12/11 23:52:43 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/01/06 14:48:52 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_itoa(int n)
 	char	*rslt;
 
 	m = n;
-	size = ft_nbdigits(n) + ft_isnegative(n);
+	size = ft_nbdigits(n) + (m < 0);
 	if (!(rslt = (char *)ft_strnew(size)))
 		return (NULL);
 	if (m < 0)

@@ -6,12 +6,11 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/22 21:09:31 by amehmeto          #+#    #+#             */
-/*   Updated: 2016/12/30 04:03:27 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/01/06 17:55:35 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int		identik(const char *a, const char *b, size_t n)
 {
