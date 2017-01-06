@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/29 18:07:08 by amehmeto          #+#    #+#             */
-/*   Updated: 2017/01/06 19:03:10 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/01/06 20:17:41 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,8 @@ void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 		while (tmp)
 		{
 			next = tmp->next;
-			f(tmp->content);
+			f(tmp);
 			tmp = next;
 		}
-		lst = NULL;
 	}
 }
