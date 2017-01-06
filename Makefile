@@ -95,6 +95,6 @@ clean:
 	rm -rf $(OBJ)
 
 fclean: clean
-	rm -rf $(NAME) a.out
+	rm -rf $(NAME)
 
 re: fclean all
