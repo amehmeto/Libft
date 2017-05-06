@@ -6,7 +6,7 @@
 #    By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/12 02:44:46 by amehmeto          #+#    #+#              #
-#    Updated: 2017/01/06 22:48:34 by amehmeto         ###   ########.fr        #
+#    Updated: 2017/05/07 00:26:36 by amehmeto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,6 +56,7 @@ FILE = ft_memset.c \
 		ft_strnequ.c \
 		ft_strsub.c \
 		ft_strjoin.c \
+		ft_strjoin_u.c \
 		ft_strtrim.c \
 		ft_strsplit.c \
 		ft_itoa.c \
@@ -80,7 +81,7 @@ FILE = ft_memset.c \
 
 OBJ = $(FILE:.c=.o)
 CC = gcc
-FLAGS = -Wall -Werror -Wextra 
+FLAGS = -Weverything 
 
 all: $(NAME)
 
@@ -89,7 +90,7 @@ $(NAME): $(OBJ)
 	ranlib $(NAME)
 
 %.o: %.c
-	$(CC) -c $< $(FLAGS)
+	@$(CC) -c $< $(FLAGS)
 
 clean:
 	rm -rf $(OBJ)

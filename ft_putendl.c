@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 00:58:24 by amehmeto          #+#    #+#             */
-/*   Updated: 2016/12/01 01:02:25 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/05/07 00:04:30 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	ft_putendl(char const *s)
 {
 	char	*tmp;
 
-	tmp = (char *)s;
+	tmp = ft_strdup(s);
 	ft_putstr(tmp);
 	ft_putchar('\n');
+	free(tmp);
 }

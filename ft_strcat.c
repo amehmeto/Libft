@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 01:12:10 by amehmeto          #+#    #+#             */
-/*   Updated: 2016/11/30 11:13:55 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/05/07 00:45:55 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strcat(char *s1, const char *s2)
 	int		j;
 
 	i = 0;
-	j = ft_strlen(s1) - 1;
+	j = (int)ft_strlen(s1) - 1;
 	while (s2[i++])
 		s1[i + j] = s2[i - 1];
 	s1[i + j] = '\0';

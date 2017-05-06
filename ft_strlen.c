@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 01:59:06 by amehmeto          #+#    #+#             */
-/*   Updated: 2016/12/20 19:19:06 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/05/07 00:46:47 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t		ft_strlen(const char *s)
 {
-	int		counter;
+	size_t		counter;
 
 	counter = 0;
 	while (s[counter])
