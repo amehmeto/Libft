@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 05:37:39 by amehmeto          #+#    #+#             */
-/*   Updated: 2016/12/01 10:06:37 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/05/07 01:22:19 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,7 @@ void	*ft_memalloc(size_t size)
 	ptr = malloc(size);
 	if (ptr == NULL)
 		return (NULL);
-	while (size + 1)
-	{
+	while (size--)
 		ptr[size] = 0;
-		size--;
-	}
 	return (ptr);
 }

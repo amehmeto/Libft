@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 02:09:31 by amehmeto          #+#    #+#             */
-/*   Updated: 2017/04/24 20:11:48 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/11/24 04:51:01 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void				*ft_memmove(void *dst, const void *src, size_t len);
 void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
+void				*ft_memdup(const void *src, size_t n);
 size_t				ft_strlen(const char *s);
 char				*ft_strdup(const char *s1);
 char				*ft_strcpy(char *dst, const char *src);
@@ -89,5 +90,7 @@ char				*ft_remws(char const *s);
 int					ft_nbdigits(int n);
 int					ft_isnegative(int c);
 int					ft_ispositive(int c);
+void				ft_strtoupper(char *s);
+int					ft_abs(int n);
 
 #endif

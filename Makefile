@@ -6,7 +6,7 @@
 #    By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/12 02:44:46 by amehmeto          #+#    #+#              #
-#    Updated: 2017/05/07 00:26:36 by amehmeto         ###   ########.fr        #
+#    Updated: 2017/11/24 04:48:52 by amehmeto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ FILE = ft_memset.c \
 		ft_memmove.c \
 		ft_memchr.c \
 		ft_memcmp.c \
+		ft_memdup.c \
 		ft_strlen.c \
 		ft_strdup.c \
 		ft_strcpy.c \
@@ -77,20 +78,26 @@ FILE = ft_memset.c \
 		ft_remws.c \
 		ft_nbdigits.c \
 		ft_isnegative.c \
-		ft_ispositive.c
+		ft_ispositive.c \
+		ft_strtoupper.c \
+		ft_abs.c
 
 OBJ = $(FILE:.c=.o)
 CC = gcc
-FLAGS = -Weverything 
+FLAGS = -Weverything -g -pedantic 
+
+GREEN = \033[32m
+NO_COLOR = \033[0m
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
+	@printf "$(GREEN) Object compilation done. \n$(NO_COLOR)"
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
 %.o: %.c
-	@$(CC) -c $< $(FLAGS)
+	$(CC) -c $< $(FLAGS)
 
 clean:
 	rm -rf $(OBJ)

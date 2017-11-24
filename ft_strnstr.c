@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/22 21:09:31 by amehmeto          #+#    #+#             */
-/*   Updated: 2017/05/07 00:33:59 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/06/01 06:33:58 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static int		identik(const char *a, const char *b, size_t n)
 {
 	int		m;
 
-	m = n;
+	m = (int)n;
 	while (*b)
 	{
 		if (*a++ == *b++)

@@ -6,7 +6,7 @@
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/30 10:54:38 by amehmeto          #+#    #+#             */
-/*   Updated: 2017/01/04 20:47:07 by amehmeto         ###   ########.fr       */
+/*   Updated: 2017/06/01 06:16:57 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		cpy = ft_strcat(cpy, s2);
 		return (cpy);
 	}
-	return (0);
+	return (NULL);
 }

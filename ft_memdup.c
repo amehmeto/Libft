@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amehmeto <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/27 02:23:58 by amehmeto          #+#    #+#             */
-/*   Updated: 2017/06/01 06:39:38 by amehmeto         ###   ########.fr       */
+/*   Created: 2017/05/07 01:23:37 by amehmeto          #+#    #+#             */
+/*   Updated: 2017/06/01 07:08:54 by amehmeto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memdup(const void *src, size_t n)
 {
+	unsigned char			*mem_dup;
+	const unsigned char		*tmp_src;
 	size_t			i;
-	unsigned char	*tmp_dst;
-	const unsigned char	*tmp_src;
 
-	i = 0;
-	tmp_dst = (unsigned char *)dst;
 	tmp_src = src;
+	if (!(mem_dup = ft_memalloc(n)))
+		return (NULL);
+	i = 0;
 	while (i < n)
 	{
-		tmp_dst[i] = tmp_src[i];
+		mem_dup[i] = (unsigned char)tmp_src[i];
 		i++;
 	}
-	return (dst);
+	return (mem_dup);
 }
