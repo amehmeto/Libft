@@ -84,7 +84,7 @@ FILE = ft_memset.c \
 
 OBJ = $(FILE:.c=.o)
 CC = gcc
-FLAGS = -Weverything -g -pedantic 
+FLAGS = -g -pedantic
 
 GREEN = \033[32m
 NO_COLOR = \033[0m
